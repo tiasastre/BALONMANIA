@@ -1,0 +1,345 @@
+/* Paleta de colores */
+:root {
+    --background-color: #f5f5f5; /* Fondo gris claro */
+    --text-color: #333; /* Texto gris oscuro */
+    --accent-color: #ff6600; /* Naranja */
+    --link-color: #000; /* Enlaces negros */
+    --hover-color: #444; /* Color al hacer hover */
+    --primary-gradient: linear-gradient(to bottom, rgb(255, 114, 114), red); /* Degradado naranja */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header {
+    background: var(--primary-gradient); /* Fondo con degradado naranja */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos de la barra de búsqueda */
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.search-bar button {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover en el botón de búsqueda */
+.search-bar button:hover {
+    background-color: #333;
+}
+
+
+/* Estilos de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 3px;
+}
+
+nav .inicio,
+nav .inicial {
+    padding: 0px 5px; /* Aumenta el espacio vertical */
+    text-align: center;
+}
+
+/* Estilos para el enlace "Inicio" y "Contacto" dentro de las cajas */
+nav .inicio a,
+nav .inicial a {
+    display: block;
+    padding: 0px 10px; /* Aumenta el espacio vertical dentro de las cajas */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 0px 0px;
+    transition: color 0.3s;
+}
+
+/* Efecto hover en los enlaces de navegación */
+nav a:hover {
+    color: var(--hover-color);
+}
+
+/* Estilos específicos para secciones de productos */
+.product-list {
+    background-color: #fff;
+    height: 1000px;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 20px; /* Espacio entre los productos */
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para cada producto */
+.product {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    height: 380px;
+    margin-top: -450px;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+/* Colores para encabezados de sección */
+.product-list h2 {
+    grid-column: 1 / -1; /* Hace que el h2 ocupe todo el ancho de la cuadrícula */
+    margin-bottom: 20px;
+    margin-left: 0;
+    font-family: Verdana;
+    color: var(--link-color);
+    text-align: left;
+}
+
+/* Estilos para menú desplegable */
+.cosas {
+    text-align: center;
+    border-bottom: solid 10px white;
+    border-right: 2px solid grey;
+    transition: border 0.5s;
+}
+
+.cosas:hover {
+    border-bottom: solid 10px black;
+}
+
+.guapo {
+    margin-top: 10px;
+    padding: 30px;
+    
+}
+
+.guapo2 {
+    padding: 30px;
+}
+
+.inicio {
+    text-align: center;
+    border-bottom: solid 10px white;
+    border-right: 2px solid grey;
+    transition: border 0.5s;
+}
+
+
+.inicio2 {
+    text-align: center;
+    border-bottom: solid 10px white;
+    border-right: 2px solid grey;
+    transition: border 0.5s;
+}
+
+.inicial {
+    text-align: center;
+    border-bottom: solid 10px white;
+    transition: border 0.5s;
+}
+
+.inicio:hover {
+    border-bottom: solid 10px black;
+}
+
+.inicio2:hover {
+    border-bottom: solid 10px black;
+}
+
+.inicial:hover {
+    border-bottom: solid 10px black;
+}
+
+
+/* Estilos para el carrito de compras */
+.cart {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.cart-icon {
+    font-size: 24px;
+    color: var(--link-color);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Efecto hover en el icono del carrito */
+.cart-icon:hover {
+    color: var(--hover-color);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    nav a {
+        padding: 10px 0;
+        width: 100%;
+    }
+}
+
+
+footer {
+    text-align:center;
+}
+/* Estilos para el contenido principal y el menú vertical */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 5000px;
+}
+
+
+/* Ajustes para dispositivos más pequeños */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambio a disposición vertical en pantallas pequeñas */
+    }
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* Asegura que los elementos estén separados y distribuidos */
+    padding: 20px; /* Añade padding alrededor de todo el contenido de main */
+}
+
+
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.product img {
+    width: 100%;
+    height: 200px; /* Reduce la altura para que la imagen se vea más de lejos */
+    object-fit: contain; /* Muestra toda la imagen manteniendo su relación de aspecto */
+    border-radius: 10px;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: var(--link-color);
+}
+
+.product p {
+    font-size: 0.9em;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    margin-top: -7px;
+}
+
+.product-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.product-buttons a {
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-more-info {
+    background-color: #e57373; /* Rojo oscuro para más información */
+}
+
+.btn-more-info:hover {
+    background-color: #da5555;
+    transform: scale(1.05);
+}
+
+.btn-buy {
+    background-color: #d32f2f; /* Rojo claro para comprar */
+}
+
+.btn-buy:hover {
+    background-color: #e91212;
+    transform: scale(1.05);
+}
+
+/* Ajustes responsivos para cuando la pantalla sea muy pequeña */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambia la dirección de los elementos a vertical */
+    }
+
+}
+
+h2 {
+    margin-left: 20px;
+    font-family: Verdana;
+}
